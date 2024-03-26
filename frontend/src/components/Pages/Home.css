@@ -1,0 +1,79 @@
+.home {
+  /* height: 100vh;
+  width: 100%; */
+  /* margin-top: -150px; */
+  /* background-color: #8AAAE5; */
+}
+
+.first {
+  background-image: url("../images/logo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 150px;
+opacity: 0.8;
+background-color: transparent;
+}
+
+.textarea {
+  height: 200px;
+}
+
+.left-pane {
+  overflow-y: scroll;
+  /* background: wheat; */
+  height: 100vh;
+  box-shadow: 0px 0px 3px; /* Increased shadow effect */
+}
+
+.middle-pane {
+  /* background: #e0e0e0; */
+  overflow-y: scroll;
+  height: 100vh;
+  box-shadow: 0px 0px 3px; /* Increased shadow effect */
+  color: #75551a;
+}
+
+.right-pane {
+  /* background: #d0d0d0; */
+  height: 100vh;
+  box-shadow: 0px 0px 5px; /* Increased shadow effect */
+}
+
+.video-container-wrapper {
+  overflow-y: auto;
+}
+.frame{
+    margin:3px;
+}
+.video-container.scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top:5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.middle-pane .post-title,
+.middle-pane .post-content {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.middle-pane .post-title {
+  animation-delay: 0.2s;
+}
+
+.middle-pane .post-content {
+  animation-delay: 0.4s;
+}
+.button-view {
+  width: 150px !important;
+}
